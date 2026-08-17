@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beepop — Pure honey that travels as well as you do</title>
+  <meta name="description" content="Beepop — tear-open sticks of 100% pure, single-origin honey from Kolkata. No spoon, no spill, no jar to carry. Pure as nature." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/sections.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/beepop-logo.png" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Sticky Nav
+       ====================================================================== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Beepop — home">
+        <img class="nav__logo-img" src="assets/beepop-logo.png" alt="Beepop — Pure As Nature, Pure Goodness" width="140" height="140" />
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#why-beepop">Why Beepop</a></li>
+          <li><a class="nav__link" href="#the-stick">The Stick</a></li>
+          <li><a class="nav__link" href="#story">Story</a></li>
+          <li><a class="nav__link" href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <a href="#order" class="btn btn--primary nav__cta">Get Early Access</a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========================================================================
+         2. Hero
+         ====================================================================== -->
+    <section id="why-beepop" class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__copy" data-reveal>
+            <span class="eyebrow">Tear & Go · Pure Goodness</span>
+            <h1 class="hero__headline">
+              Honey that travels <em>as well as you do.</em>
+            </h1>
+            <p class="hero__sub">
+              100% pure, single-origin honey from the apiaries of Bengal,
+              packed into a single tear-open stick. No spoon, no spill, no jar to carry.
+            </p>
+            <div class="hero__ctas">
+              <a href="#order" class="btn btn--primary">Get Early Access</a>
+              <a href="#the-stick" class="btn btn--outline">See The Stick</a>
+            </div>
+          </div>
+
+          <div class="hero__photo" data-reveal>
+            <img
+              class="product-img product-img--hero"
+              src="assets/product-spotlight.jpg"
+              alt="A single tear-open Beepop honey stick — pure honey"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Trust badge strip
+         ====================================================================== -->
+    <section class="trust-strip" aria-label="What makes Beepop different">
+      <div class="trust-strip__grid">
+        <div class="trust-badge" data-reveal>
+          <svg class="trust-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 14.8 7.1 17.2l.9-5.5-4-3.9 5.5-.8z" />
+          </svg>
+          <span class="trust-badge__label">100% Pure</span>
+        </div>
+
+        <div class="trust-badge" data-reveal>
+          <svg class="trust-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M13 2L4 14h7l-1 8 9-12h-7z" />
+          </svg>
+          <span class="trust-badge__label">Natural Energy</span>
+        </div>
+
+        <div class="trust-badge" data-reveal>
+          <svg class="trust-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 21s-7-4.5-7-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-7 11-7 11z" />
+            <path d="M9 11l2 2 4-4" />
+          </svg>
+          <span class="trust-badge__label">Immunity Booster</span>
+        </div>
+
+        <div class="trust-badge" data-reveal>
+          <svg class="trust-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M5 5l14 14" />
+          </svg>
+          <span class="trust-badge__label">No Added Sugar</span>
+        </div>
+
+        <div class="trust-badge" data-reveal>
+          <svg class="trust-badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="4" y="7" width="16" height="13" rx="2" />
+            <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+            <path d="M12 12v4" />
+          </svg>
+          <span class="trust-badge__label">Travel Friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. Product spotlight
+         ====================================================================== -->
+    <section id="the-stick" class="spotlight">
+      <div class="container">
+        <div class="spotlight__grid">
+          <div class="spotlight__photo" data-reveal>
+            <img
+              class="product-img product-img--spotlight"
+              src="assets/product-spotlight.jpg"
+              alt="A single tear-open Beepop honey stick — pure honey"
+            />
+          </div>
+
+          <div class="spotlight__copy" data-reveal>
+            <span class="eyebrow">The Beepop Stick</span>
+            <h2>One tear. One perfect drop.</h2>
+            <p>
+              Cold-extracted, single-origin honey from Bengal — packed into a single
+              tear-open stick so you can carry real honey anywhere, mess-free.
+            </p>
+
+            <ul class="feature-list">
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-11"/></svg>
+                </span>
+                <span><strong>100% pure & natural</strong> — single-origin, no blends, no additives.</span>
+              </li>
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-11"/></svg>
+                </span>
+                <span><strong>Tear-and-go pack</strong> — no spoon, no jar, no sticky fingers.</span>
+              </li>
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-11"/></svg>
+                </span>
+                <span><strong>Real blossoms, real bees</strong> — cold-extracted, never pasteurised.</span>
+              </li>
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-11"/></svg>
+                </span>
+                <span><strong>Packed in Kolkata</strong> — by a small team that knows their bees.</span>
+              </li>
+            </ul>
+
+            <p class="spotlight__heading-note">Be first to try it.</p>
+
+            <form id="spotlight-signup" class="signup-form signup-form--inline" novalidate>
+              <label for="spotlight-email" class="visually-hidden">Email address</label>
+              <input
+                id="spotlight-email"
+                class="input"
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="btn btn--honey">Notify me at launch</button>
+            </form>
+            <div id="thanks-spotlight" class="thanks" role="status">
+              You're on the list. We'll write the moment Beepop ships.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Use cases grid
+         ====================================================================== -->
+    <section class="use-cases">
+      <div class="container">
+        <div class="use-cases__head" data-reveal>
+          <span class="eyebrow">Where Beepop belongs</span>
+          <h2>The smallest jar of honey you own — wherever you are.</h2>
+          <p>One stick is the right amount, exactly when you need it.</p>
+        </div>
+
+        <div class="use-cases__grid">
+          <article class="card" data-reveal>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M3 8h18l-1.5 11a2 2 0 0 1-2 1.7H6.5a2 2 0 0 1-2-1.7L3 8z" />
+              <path d="M8 8V5a4 4 0 0 1 8 0v3" />
+              <path d="M9 12c1 0 1.5 1 3 1s2-1 3-1" />
+            </svg>
+            <h3 class="card__title">Morning Tea &amp; Coffee</h3>
+            <p class="card__desc">Stir a perfect amount into your chai or filter coffee — never too much, never too little.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M5 8h14l-1 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 8z" />
+              <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+              <path d="M9 12l3 2 3-2" />
+            </svg>
+            <h3 class="card__title">Gym Bag &amp; Travel Pouch</h3>
+            <p class="card__desc">A pre-workout sweetness that weighs nothing and survives any bag — no leaks, no excuses.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="4" y="6" width="16" height="14" rx="2" />
+              <path d="M4 10h16" />
+              <path d="M9 6V4h6v2" />
+              <circle cx="12" cy="14" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+            <h3 class="card__title">Kids' Tiffin Box</h3>
+            <p class="card__desc">A tidy, mess-free way to add real honey to rotis, parathas, or fruit — without the jar coming home sticky.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <path d="M4 9h16" />
+              <path d="M9 4v16" />
+              <path d="M14 14h3M14 17h3" />
+            </svg>
+            <h3 class="card__title">Desk Drawer Pick-Me-Up</h3>
+            <p class="card__desc">3pm slump? A single stick of real honey — straight from the pack — is the natural lift your afternoon needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. Brand story (dark forest section)
+         ====================================================================== -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="story__grid">
+          <div data-reveal>
+            <span class="eyebrow" style="color: var(--honey-light);">Our story</span>
+            <h2>Pure goodness, in every drop.</h2>
+            <p class="story__script">"Nature's sweetest gift."</p>
+            <p>
+              <strong>Real blossoms.</strong> Our honey comes from small apiaries across Bengal,
+              where the bees forage on mustard, litchi, and wild forest flowers — never fed sugar
+              syrup, never rushed. Each harvest is single-origin, so the taste of the season is
+              preserved in every stick.
+            </p>
+            <p>
+              <strong>Real bees, real care.</strong> We cold-extract and minimally strain —
+              no high-heat pasteurization, no ultra-filtration, no additives. What's in the
+              stick is what was in the comb: nothing added, nothing taken away, nothing to hide.
+            </p>
+          </div>
+
+          <div class="story__photo" data-reveal>
+            <img
+              class="product-img product-img--story"
+              src="assets/product-spotlight.jpg"
+              alt="Beepop honey stick — pure honey from Bengal"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. Reviews (honest empty state)
+         ====================================================================== -->
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <div class="reviews__inner" data-reveal>
+          <svg class="reviews__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4l-5 2.6 1.3-4.6A8.4 8.4 0 1 1 21 11.5z" />
+            <path d="M8 11h.01M12 11h.01M16 11h.01" stroke-linecap="round" />
+          </svg>
+          <h2>Reviews coming soon.</h2>
+          <p>
+            We haven't launched yet — and we won't put words in anyone's mouth.
+            Be among the first to try Beepop, and your honest review will appear right here.
+          </p>
+          <a href="#order" class="btn btn--primary">Get on the early list</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. Order CTA
+         ====================================================================== -->
+    <section id="order" class="order-cta">
+      <div class="container">
+        <div class="order-cta__inner" data-reveal>
+          <span class="eyebrow">Almost ready</span>
+          <h2>Online ordering with Cash on Delivery is on its way.</h2>
+          <p>
+            Leave your details below and we'll reach out the moment Beepop is available
+            for home delivery across India. Or message us on WhatsApp right now.
+          </p>
+
+          <form id="order-form" class="order-cta__form" novalidate>
+            <div class="form-row form-row--two">
+              <div class="field">
+                <label for="order-email">Email</label>
+                <input
+                  id="order-email"
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="field">
+                <label for="order-phone">Phone (with WhatsApp)</label>
+                <input
+                  id="order-phone"
+                  class="input"
+                  type="tel"
+                  name="phone"
+                  placeholder="+91 98XXXXXXXX"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              Save my spot for COD launch
+            </button>
+
+            <div id="thanks-order" class="thanks" role="status">
+              Got it. We'll be in touch — and your honey is on its way.
+            </div>
+
+            <div class="order-cta__divider">or skip ahead</div>
+
+            <a
+              class="btn btn--whatsapp btn--block"
+              href="https://wa.me/?text=Hi%20Beepop%20%F0%9F%90%9D%2C%20I%27d%20like%20to%20know%20when%20you%20launch%20in%20my%20city."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.5 3.5A11 11 0 0 0 3.6 17.3L2 22l4.8-1.6A11 11 0 1 0 20.5 3.5zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.9 1 1-2.8-.2-.3A8 8 0 1 1 12 20zm4.5-5.7c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.1-.5 0a6.6 6.6 0 0 1-3.3-2.9c-.2-.4 0-.6.2-.8l.4-.5c.1-.2.2-.3.3-.5s0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7s1.8 2.8 4.4 3.9 1.6.3 2.4.3 1.5-.6 1.7-1.2.2-1.1.1-1.2-.2-.2-.5-.3z"/>
+              </svg>
+              Message us on WhatsApp
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       9. Footer
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img class="footer__logo-img" src="assets/beepop-logo.png" alt="Beepop" width="160" height="160" />
+        <p class="footer__tagline">Pure As Nature</p>
+        <p>
+          Single-origin honey from the apiaries of Bengal, packed by hand into
+          tear-open sticks in Kolkata.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#the-stick">The Stick</a></li>
+          <li><a href="#why-beepop">Why Beepop</a></li>
+          <li><a href="#story">Our Story</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#story">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#order">Early Access</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:yash11jajodia@gmail.com">yash11jajodia@gmail.com</a></li>
+          <li>
+            <a
+              href="https://wa.me/?text=Hi%20Beepop%2C%20I%27d%20like%20to%20know%20when%20you%20launch."
+              target="_blank"
+              rel="noopener"
+            >WhatsApp</a>
+          </li>
+          <li><a href="#order">Get Early Access</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <address class="footer__address">
+        <strong>Saurabh Jajodia / Yash Jajodia</strong><br />
+        Unit of Balaji Trading Company<br />
+        Based in Kolkata<br />
+        <a href="mailto:yash11jajodia@gmail.com" style="color: var(--honey-light);">yash11jajodia@gmail.com</a> for queries
+      </address>
+      <span>&copy; 2026 Beepop. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+/* ==========================================================================
+   Beepop — Component styles
+   ==========================================================================
+   Buttons, badges, form inputs, cards, product images, thank-you message.
+   ========================================================================== */
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.85rem 1.6rem;
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-pill);
+  border: 2px solid transparent;
+  transition: transform 160ms ease, background 160ms ease,
+              color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn--primary {
+  background: var(--forest);
+  color: var(--cream);
+  border-color: var(--forest);
+  box-shadow: var(--shadow-soft);
+}
+.btn--primary:hover {
+  background: var(--forest-deep);
+  border-color: var(--forest-deep);
+  color: var(--cream);
+}
+
+.btn--honey {
+  background: var(--honey-deep);
+  color: var(--ink);
+  border-color: var(--honey-deep);
+}
+.btn--honey:hover {
+  background: var(--honey-light);
+  border-color: var(--honey-light);
+  color: var(--ink);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--honey-deep);
+}
+.btn--outline:hover {
+  background: var(--honey-deep);
+  color: var(--ink);
+}
+
+.btn--whatsapp {
+  background: #25D366;
+  color: #ffffff;
+  border-color: #25D366;
+}
+.btn--whatsapp:hover {
+  background: #1DA851;
+  border-color: #1DA851;
+  color: #ffffff;
+}
+
+.btn--block { width: 100%; }
+
+/* ---------- Badges ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.4rem 0.9rem;
+  background: var(--cream);
+  color: var(--forest);
+  border: 1.5px solid var(--forest);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Forms ---------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--cream);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-md);
+  color: var(--ink);
+  font-size: var(--fs-base);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.input::placeholder { color: var(--ink-soft); opacity: 0.7; }
+
+.input:focus {
+  outline: none;
+  border-color: var(--honey-deep);
+  box-shadow: 0 0 0 3px rgba(232, 163, 36, 0.18);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 600px) {
+  .form-row--two { grid-template-columns: 1fr 1fr; }
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.signup-form--inline {
+  flex-direction: row;
+  align-items: stretch;
+}
+.signup-form--inline .input { flex: 1; }
+
+@media (max-width: 599px) {
+  .signup-form--inline { flex-direction: column; }
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-soft);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-4);
+  color: var(--honey-deep);
+}
+
+.card__title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+.card__desc {
+  font-size: var(--fs-sm);
+  color: var(--ink-soft);
+  line-height: var(--lh-base);
+  margin: 0;
+}
+
+/* ---------- Feature list ---------- */
+.feature-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--ink);
+}
+
+.feature-list__bullet {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--honey-light);
+  color: var(--forest);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+/* ---------- Product images (clean, no frame) ---------- */
+.product-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Hero product image — floating with soft glow */
+.product-img--hero {
+  max-width: 420px;
+  margin: 0 auto;
+  filter: drop-shadow(0 24px 48px rgba(232, 163, 36, 0.22))
+          drop-shadow(0 8px 16px rgba(58, 35, 17, 0.10));
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Spotlight product image */
+.product-img--spotlight {
+  max-width: 380px;
+  margin: 0 auto;
+  filter: drop-shadow(0 20px 40px rgba(232, 163, 36, 0.20))
+          drop-shadow(0 6px 12px rgba(58, 35, 17, 0.08));
+  transition: transform 400ms ease;
+}
+
+.product-img--spotlight:hover {
+  transform: scale(1.03);
+}
+
+/* Story product image (on dark bg) */
+.product-img--story {
+  max-width: 360px;
+  margin: 0 auto;
+  filter: drop-shadow(0 20px 40px rgba(246, 196, 83, 0.25))
+          drop-shadow(0 6px 12px rgba(0, 0, 0, 0.20));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+
+/* ---------- Thank-you message ---------- */
+.thanks {
+  display: none;
+  padding: var(--space-3) var(--space-4);
+  background: var(--honey-pale);
+  border: 1px solid var(--honey-deep);
+  border-radius: var(--radius-md);
+  color: var(--ink);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  margin-top: var(--space-3);
+}
+
+.thanks.is-visible { display: block; }
+
+/* ---------- Trust badge ---------- */
+.trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+  padding: var(--space-3);
+}
+
+.trust-badge__icon {
+  width: 44px;
+  height: 44px;
+  color: var(--forest);
+}
+
+.trust-badge__label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Scroll-reveal ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
